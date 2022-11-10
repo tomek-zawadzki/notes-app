@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <script defer src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/aee95fd16a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="menu">
+      <h1><i class="fas fa-sticky-note"> </i></h1>
+      <div class="menu-buttons">
+        <button class="add icon"><i class="fas fa-plus"></i> Dodaj</button>
+        <button class="delete-all icon">
+          <i class="fas fa-trash-alt"></i> Usuń wszystko
+        </button>
+      </div>
+    </div>
+    <div class="note-area">
+      <div class="note-header">
+        <h3 class="note-title">Notatka #1</h3>
+        <button class="delete-note">
+          <i class="fas fa-times icon"></i>
+        </button>
+      </div>
+      <div class="note-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+        necessitatibus rem aperiam ad minima dolore obcaecati repellat, omnis
+        voluptatum soluta accusantium eligendi id quam impedit expedita, sit
+        exercitationem, consequuntur qui?
+      </div>
+    </div>
+
+    <div class="note-panel">
+      <h2>Dodaj notatkę</h2>
+      <label for="category">Wybierz kategorię</label>
+      <select id="category">
+        <option value="0" disabled selected>- wybierz kategorię -</option>
+        <option value="1">Zakupy</option>
+        <option value="1">Praca</option>
+        <option value="1">Inne</option>
+      </select>
+      <label for="text">Wpisz treść notatki</label>
+      <textarea id="text"></textarea>
+      <p class="error">Uzupełnij wszystkie pola!</p>
+
+      <div class="panel-buttons">
+        <button class="save icon"><i class="fas fa-save"> Zapisz</i></button>
+        <button class="cancel icon">
+          <i class="far fa-window-close"> Anuluj</i>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
